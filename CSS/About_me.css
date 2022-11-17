@@ -161,7 +161,13 @@ a, a:visited{
 }
 
 .hello {
-  opacity: 1;
+  opacity: 1 !important;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
 }
 
 .gallery {
