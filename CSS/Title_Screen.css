@@ -298,6 +298,7 @@ margin-top: 15px;
 .PlayStation iframe{
 float: left;
 margin: 20px;
+left: 25%;
 }
 
 #Console_1{
@@ -320,6 +321,7 @@ align-items: center;
 .Xbox iframe{
 float: right;
 margin: 20px;
+  right: 25%;
 }
 
 .X_tag{
@@ -374,6 +376,7 @@ margin-top: 15px;
 .Nintendo iframe{
 float: left;
 margin: 20px;
+  left: 25%;
 }
 
 #Console_3{
