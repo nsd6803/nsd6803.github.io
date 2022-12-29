@@ -555,7 +555,7 @@ list-style-type:none;
 .A_M {
   grid-area: About_Me;
     border-radius: 10px;
-  text-align: left;
+
   margin: 20px;
 }
 
