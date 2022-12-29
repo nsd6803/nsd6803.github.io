@@ -13,16 +13,17 @@ a, a:visited{
 
 html,
 body {
+  height: 100%;
+  width: 100%;
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  display: grid;
   font-family: "Poppins", sans-serif;
   place-items: center;
   color: white;
 }
 header{
-height: 20vh;
-width: 100vw;
+    height: 20vh;
+    width: 100%;
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   color: #ffffff;
@@ -154,11 +155,12 @@ width: 100%;
 
 
 .wrapper {
-  max-width: 713px;
+  display: grid;
+  justify-content: center;
   margin: 0 auto;
-  padding: 1em;
   background: #6a5acd;
   border: 1px solid #c1c1c1;
+  width: 50%;
 }
 
 h3 {
@@ -220,9 +222,10 @@ input[type=submit]:hover, input[type=submit]:focus {
 
 form {
   position: relative;
-  left: 50%;
   transform: translate(-50%, 0);
   gap: 30px;
+
+  justify-content: center;
   display: inline-grid;
   grid-template-areas:
     "name"
@@ -259,6 +262,7 @@ grid-area: button;
 
 @media (max-width: 2560px) {
   form {
+  left: 50%;
     grid-template-columns: 250px 250px;
     grid-template-areas:
       "name surname"
@@ -278,7 +282,8 @@ grid-area: button;
 
 @media (max-width: 1000px) {
   form {
-    grid-template-columns: 400px;
+
+    grid-template-columns: 300px;
     grid-template-areas:
       "name"
       "surname"
@@ -295,5 +300,16 @@ grid-area: button;
           width: 50%;
           border: 0;
           padding: 1em;
+      }
+      .wrapper {
+        display: grid;
+        background: #6a5acd;
+        border: 1px solid #c1c1c1;
+        width: 90%;
+
+      }
+      input,
+      textarea{
+        width: 80%;
       }
 }
